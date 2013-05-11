@@ -64,7 +64,7 @@ l.style_definition = style{fore = l.colors.light_yellow      }
 l.style_error      = style{fore = l.colors.red, italic = true}
 l.style_function   = style{fore = l.colors.purple            }
 l.style_keyword    = style{fore = l.colors.light_white       }
-l.style_label      = style{fore = l.colors.light_white       }
+l.style_label      = style{fore = l.colors.light_green       }
 l.style_number     = style{fore = l.colors.light_green       }
 l.style_operator   = style{fore = l.colors.light_blue        }
 l.style_regex      = style{fore = l.colors.orange            }
