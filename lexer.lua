@@ -9,8 +9,8 @@ local l, color, style = lexer, lexer.color, lexer.style
 
 l.colors = {
   -- Greyscale colors.
-  dark_black   = color('00', '00', '00'),
-  black        = color('11', '11', '11'),
+  dark_black   = color('0b', '0b', '0b'),
+  black        = color('1a', '1a', '1a'),
   light_black  = color('2A', '2A', '2A'),
   --             color('4D', '4D', '4D'),
   dark_grey    = color('55', '55', '55'),
@@ -56,24 +56,24 @@ l.colors = {
   light_blue     = color('88', 'ee', 'ff'),
 }
 
-l.style_nothing    = style{                                  }
-l.style_class      = style{fore = l.colors.light_yellow      }
-l.style_comment    = style{fore = l.colors.dark_grey         }
-l.style_constant   = style{fore = l.colors.light_red         }
-l.style_definition = style{fore = l.colors.light_yellow      }
-l.style_error      = style{fore = l.colors.red, italic = true}
-l.style_function   = style{fore = l.colors.purple            }
-l.style_keyword    = style{fore = l.colors.light_white       }
-l.style_label      = style{fore = l.colors.light_green       }
-l.style_number     = style{fore = l.colors.light_green       }
-l.style_operator   = style{fore = l.colors.light_blue        }
-l.style_regex      = style{fore = l.colors.orange            }
-l.style_string     = style{fore = l.colors.yellow            }
-l.style_preproc    = style{fore = l.colors.orange            }
-l.style_tag        = style{fore = l.colors.light_white       }
-l.style_type       = style{fore = l.colors.purple            }
-l.style_variable   = style{fore = l.colors.light_red         }
-l.style_whitespace = style{                                  }
+l.style_nothing    = style{                                   }
+l.style_class      = style{fore = l.colors.light_yellow       }
+l.style_comment    = style{fore = l.colors.dark_grey          }
+l.style_constant   = style{fore = l.colors.light_red          }
+l.style_definition = style{fore = l.colors.light_yellow       }
+l.style_error      = style{fore = l.colors.red, italic = true }
+l.style_function   = style{fore = l.colors.purple             }
+l.style_keyword    = style{fore = l.colors.light_white        }
+l.style_label      = style{fore = l.colors.light_green        }
+l.style_number     = style{fore = l.colors.light_green        }
+l.style_operator   = style{fore = l.colors.light_blue         }
+l.style_regex      = style{fore = l.colors.orange             }
+l.style_string     = style{fore = l.colors.yellow             }
+l.style_preproc    = style{fore = l.colors.orange             }
+l.style_tag        = style{fore = l.colors.light_white        }
+l.style_type       = style{fore = l.colors.purple             }
+l.style_variable   = style{fore = l.colors.light_red          }
+l.style_whitespace = style{                                   }
 l.style_embedded   = l.style_tag..{back = l.colors.light_black}
 l.style_identifier = l.style_nothing
 
@@ -88,13 +88,13 @@ elseif OSX then
 end
 l.style_default = style{
   font = font_face, size = font_size,
-  fore = l.colors.dark_white, back = l.colors.black
+  fore = l.colors.dark_white, back = l.colors.dark_black
 }
-l.style_line_number = style{fore = l.colors.dark_grey, back = l.colors.light_black}
-l.style_bracelight = style{fore = l.colors.black, back = l.colors.light_blue}
+l.style_line_number = style{fore = l.colors.dark_grey, back = l.colors.black}
+l.style_bracelight = style{fore = l.colors.dark_black, back = l.colors.light_blue}
 l.style_bracebad = style{fore = l.colors.light_red}
 l.style_controlchar = l.style_nothing
 l.style_indentguide = style{
-  fore = l.colors.light_black, back = l.colors.light_black
+  fore = l.colors.light_black, back = l.colors.dark_black
 }
 l.style_calltip = style{fore = l.colors.light_grey, back = l.colors.light_black}

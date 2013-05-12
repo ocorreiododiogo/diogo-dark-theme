@@ -55,7 +55,7 @@ buffer.caret_line_back = 0x333333
 --buffer.caret_sticky = c.SC_CARETSTICKY_ON
 
 -- Line Number Margin.
-buffer.margin_width_n[0] = 4 + 4 * buffer:text_width(c.STYLE_LINENUMBER, '9')
+buffer.margin_width_n[0] = 0 + 3 * buffer:text_width(c.STYLE_LINENUMBER, '9')
 
 -- Marker Margin.
 buffer.margin_width_n[1] = 0 -- marker margin invisible
