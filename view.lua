@@ -1,5 +1,5 @@
 -- "Diogo Dark" editor theme for Textadept.
--- Made from Dark theme for TextAdept (Copyright 2007-2013 Mitchell mitchell.att.foicica.com. See LICENSE.)
+-- Made from Dark theme for Textadept (Copyright 2007-2013 Mitchell mitchell.att.foicica.com. See LICENSE.)
 
 local c = _SCINTILLA.constants
 local buffer = buffer

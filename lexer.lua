@@ -1,5 +1,5 @@
 -- "Diogo Dark" editor theme for Textadept.
--- Made from Dark theme for TextAdept (Copyright 2007-2013 Mitchell mitchell.att.foicica.com. See LICENSE.)
+-- Made from Dark theme for Textadept (Copyright 2007-2013 Mitchell mitchell.att.foicica.com. See LICENSE.)
 
 -- Please note this theme is in a separate Lua state than Textadept's main one.
 -- This means the global variables like 'buffer', 'view', and 'gui' are not
@@ -18,7 +18,7 @@ l.colors = {
   light_grey   = color('99', '99', '99'),
   --             color('B3', 'B3', 'B3'),
   dark_white   = color('bb', 'bb', 'bb'),
-  white        = color('E6', 'E6', 'E6'),
+--white        = color('E6', 'E6', 'E6'),
   light_white  = color('FF', 'FF', 'FF'),
 
   -- Dark colors.
@@ -33,34 +33,33 @@ l.colors = {
 --dark_blue     = color('1A', '66', 'B3'),
 
   -- Normal colors.
-  red      = color('99', '4D', '4D'),
+  red      = color('ff', '00', '00'),
   yellow   = color('f6', 'e4', '95'),
   green    = color('4D', '99', '4D'),
   teal     = color('4D', '99', '99'),
   purple   = color('ef', 'b4', 'ff'),
   orange   = color('E6', '99', '4D'),
 --pink     = color('E6', '99', '99'),
-  lavender = color('99', '99', 'E6'),
-  blue     = color('4D', '99', 'E6'),
-  beje     = color('f2', 'f1', 'b1'),
+--lavender = color('99', '99', 'E6'),
+--blue     = color('4D', '99', 'E6'),
 
   -- Light colors.
   light_red      = color('e0', '67', '3f'),
-  light_yellow   = color('CC', 'CC', '80'),
+--light_yellow   = color('CC', 'CC', '80'),
   light_green    = color('b5', 'f2', '52'),
 --light_teal     = color('80', 'CC', 'CC'),
 --light_purple   = color('CC', '80', 'CC'),
 --light_orange   = color('FF', 'CC', '80'),
 --light_pink     = color('FF', 'CC', 'CC'),
 --light_lavender = color('CC', 'CC', 'FF'),
-  light_blue     = color('88', 'ee', 'ff'),
+  light_blue     = color('05', 'c9', 'ff'),
 }
 
 l.style_nothing    = style{                                   }
-l.style_class      = style{fore = l.colors.light_yellow       }
+l.style_class      = style{fore = l.colors.purple             }
 l.style_comment    = style{fore = l.colors.dark_grey          }
 l.style_constant   = style{fore = l.colors.light_red          }
-l.style_definition = style{fore = l.colors.light_yellow       }
+l.style_definition = style{fore = l.colors.orange             }
 l.style_error      = style{fore = l.colors.red, italic = true }
 l.style_function   = style{fore = l.colors.purple             }
 l.style_keyword    = style{fore = l.colors.light_white        }
@@ -69,7 +68,7 @@ l.style_number     = style{fore = l.colors.light_green        }
 l.style_operator   = style{fore = l.colors.light_blue         }
 l.style_regex      = style{fore = l.colors.orange             }
 l.style_string     = style{fore = l.colors.yellow             }
-l.style_preproc    = style{fore = l.colors.orange             }
+l.style_preproc    = style{fore = l.colors.purple             }
 l.style_tag        = style{fore = l.colors.light_white        }
 l.style_type       = style{fore = l.colors.purple             }
 l.style_variable   = style{fore = l.colors.light_red          }
